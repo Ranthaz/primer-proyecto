@@ -1,0 +1,26 @@
+h1{
+    color: $colorTitulos;
+    text-transform: uppercase;
+    font-size: $tituloSize;
+    text-align: center;
+    margin: 1em;
+    font-weight: 600;
+    text-align: left;
+    &.centrado{
+        text-align: center;
+        margin: 0 1em 1em 1em;
+    }
+
+}
+
+h2{
+    color: $colorTitulos !important;
+    margin-left: 0.5rem !important;
+    font-weight: 600;
+    text-align: left;
+
+}
+
+h3{
+    margin-left: 0.5rem;
+}

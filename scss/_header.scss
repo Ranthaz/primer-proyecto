@@ -1,0 +1,44 @@
+header{
+    display:flex;
+    text-align: center;
+    min-height: 70px;
+    width: 100%;
+    background-color: $colorfoothead;
+    justify-content: center;
+    align-items: center;
+    /*margin-bottom: $paddingNoticia*1.25;*/
+    img{
+      width: 2em;
+      margin: 1rem;
+    }
+}
+
+#mainHeader{
+  justify-content: space-around;
+}
+
+dl, ol, ul {
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  a{
+    text-decoration: none;
+    color: $colorTexto;
+    &:hover{
+      color: #7C005C;
+      text-decoration: none;
+    }
+  }
+
+  li.inLine{
+    display:inline-block;
+    margin: 0 3rem !important;
+    font-size: 1rem;
+
+  }
+}

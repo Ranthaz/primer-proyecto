@@ -1,0 +1,55 @@
+#footer{
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    img{
+        width: 2em;
+        margin: 0.5em 0 0.1em 0;
+    }
+
+    p{
+        font-size: 1rem;
+        padding-bottom: 0em;
+    }
+
+}
+
+.footer__firma{
+    margin: 0 0 0.1em 0;
+}
+
+#footerMain{
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+
+$logos: (
+    icoFace: 0.2rem 0.5rem 0 0,
+    icoInsta: 0.2rem 0rem 0 0.5rem
+);
+@each $red, $margen in $logos {
+    .margin-#{$red}{
+        margin: $margen;
+    }
+}
+
+.icono{
+    width: 48px;
+}
+
+.menuFooter{
+    flex-grow: 2;
+    align-self: center;
+    text-align-last: justify;
+}
+
+.logoChico{
+    width: 1.3em;
+    padding: 0;
+    margin-left: 3rem;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Proyecto</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="contacto">
+	
+	<div id="grilla"> 	 <!--inicio del header-->
+						
+		<img class="logo" width="120" src="../media/logotipo.jpg" alt="Logo rantech">
+
+		<nav class=menuH>
+
+			<ul>
+				<li class="inLine"><a class="menu" href="../index.html">Quién soy</a></li>
+		    	<li class="inLine"><a class="menu" href="../index.html#remoto">Qué hago</a></li>
+		    	<li class="inLine"><a class="menu" href="blog.html">Blog</a></li>
+		    	<li class="inLine"><a class="menu" href="#grilla">Contactame</a></li>
+		 	</ul>
+
+		 </nav>
+	</div> 					<!--fin del header-->
+
+
+	<div> 					<!--incio del content-->
+
+		<form action="pages/recibe.html" method="POST" autocomplete="off" class="form">
+			
+			<label for="Nombre">Nombre:</label>
+				<input type="text" name="nombre" placeholder="Ingresá tu nombre">
+
+			<br>
+
+			<label for="Apellido">Apellido:</label>
+				<input type="text" name="apellido" placeholder="Ingresá tu apellido">
+
+				<br>
+
+			<label for="email">Email:</label>
+				<input type="email" name="email" placeholder="ingresá tu mail">
+
+				<br>
+
+			<label for="consulta">Ingresa tu consulta:</label>
+
+			<br>
+
+				<textarea name="consulta" placeholder="Cuanto más detallada, mejor." cols="20" rows="3"></textarea>
+
+		   	 <br>
+
+				<label>¿Qué horario te queda mejor para hablar?</label> <!-- esto es sólo para el desafío, no va en la web final -->
+					<select class="option">			                 				<!-- esto es sólo para el desafío, no va en la web final -->
+						<option>9hs a 13hs</option>						<!-- esto es sólo para el desafío, no va en la web final -->	
+						<option>16hs a 20hs</option>					<!-- esto es sólo para el desafío, no va en la web final -->
+					</select>											<!-- esto es solo para el desafio, no va en la web final -->
+
+				<br>
+
+			<p class="form">¿Qué sistema operativo usás?</p>
+
+				<label for="SO">Windows</label>
+					<input type="checkbox" name="curso" value="Windows">
+
+				<br>
+
+				<label for="SO">MACOS - iOS</label>
+					<input type="checkbox" name="curso" value="MACOS - iOS">
+
+				<br>
+
+			<input class="boton botonSend" type="submit" name="sube_form" value="Enviar">
+
+			<input class="boton botonReset" type="reset" name="resetear" value="Volver a empezar">
+
+		</form>
+
+	</div>
+
+	<div id="mapa">
+
+		<p class="localidad" class="textoVioleta">
+			San Fernando <br>
+			Buenos Aires
+        </p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52641.0576630015!2d-58.60161891789768!3d-34.45046982894242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca568119a2861%3A0x27933dc457c12b90!2sSan%20Fernando%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1621216629865!5m2!1ses-419!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>	
+
+    <div class="wp">
+    	<img  src="../media/wsp2.png" alt="simbolo de whatsapp">
+    </div>			<!--fin del content-->
+
+
+	<div id="footer">		<!--incio del footer-->
+		<img class="logoChico" src="media/logo.jpg" alt="Logo">
+
+		<nav>
+
+			<ul>
+				<li class="inLine"><a class="menuf" href="../index.html#yo">Quién soy</a></li>
+		    	<li class="inLine"><a class="menuf" href="../index.html#remoto">Qué hago</a></li>
+		    	<li class="inLine"><a class="menuf" href="../pages/blog.html">Blog</a></li>
+		    	<li class="inLine"><a class="menuf" href="#contacto">Contactame</a></li>
+		 	</ul>
+
+		 </nav>
+		 <p>2021 Diseñado por Sebastián Venancio.</p>
+	</div>    <!--fin del footer-->
+
+
+
+</body>
+</html>

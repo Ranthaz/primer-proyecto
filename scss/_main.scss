@@ -1,0 +1,138 @@
+
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+body{
+    color: $colorTexto;
+    background-color: $colorFondo;
+    font-family: $fuenteTexto;
+    font-size: $cuerpoSize;
+    line-height: $cuerpoSize*1.25;
+}
+
+.fondos{
+    margin-bottom: $bannerespacio*0.25;
+    height: $bannerespacio;
+    background-image: url("../media/banner01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+section{
+
+    margin: 0em 2.5em $bannerespacio*0.25 2.5em;
+    background-color: $fondoNoticia;
+    border-radius: 40px;
+    padding: $paddingNoticia 0px;
+    box-shadow: 12px 14px 17px -9px rgba(235,199,242,1);
+
+}
+
+span{
+    font-weight: 900;
+}
+
+#oculto {
+    display: none;
+}
+  
+#oculto:target {
+  display: block;
+}
+
+#oculto2 {
+    display: none;
+}
+  
+#oculto2:target {
+  display: block;
+}
+
+.noticia{
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content: space-around;
+    justify-items: center; 
+
+    .noticia__conjunto{
+        max-width: 60%;
+        &.lefted{
+            width: 100%;
+        }
+    }
+
+    .noticia__titulo{
+    color: $colorTexto;
+    font-size: $tituloSize;
+    margin: 0em 0em 1em 0.5rem;
+    line-height: 3rem;
+
+    }
+
+    .noticia__multimedia{
+        img{
+            width: 25rem;
+            height: 21rem;
+            border-radius: 2rem;
+            
+        }
+    }
+
+    &.rowReverse{
+        flex-direction: row-reverse;
+    }
+}
+
+p{
+    margin: 0.5rem 0 1rem 0.5rem;
+    &.cita{
+        font-weight: 300;
+        font-style: italic;
+    }
+    &.firma{
+        font-size: 1rem;
+        text-align: center;
+        background-color: black;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.boton{
+    font-size: 1rem ;
+    text-decoration: none ;
+    color:$colorTexto;
+    margin-left: 0.5rem;
+    &:visited{
+        color:$colorTexto;
+    }
+}
+
+.wp{
+    img{
+	    padding:0px;
+	    height: 60px;
+	    width: 60px;
+	    position: fixed;
+	    z-index: 10;
+	    right: 25px;
+	    bottom:25px;
+	    transition: all 0.5s;
+        &:hover{
+            cursor:pointer;
+            transform: translateY(-8px);
+        }
+        &:active{
+            transform:translateY(4px);
+        }
+    }
+}
+
+.icono{
+    background-color: white;
+}
