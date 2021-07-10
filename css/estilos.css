@@ -28,7 +28,7 @@ body {
 
 section {
   margin: 0em 0 6.25em 0;
-  background-color: #22AAF5;
+  background-color: #cfe3fd;
   /*border-radius: 40px;*/
   padding: 50px 0px;
   -webkit-box-shadow: 12px 14px 17px -9px #ebc7f2;
@@ -97,6 +97,13 @@ span {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+img.crop {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 0;
+     object-position: 100% 0;
 }
 
 p {
@@ -228,11 +235,11 @@ ul {
 
 ul a {
   text-decoration: none;
-  color: #4C6EE6;
+  color: black;
 }
 
 ul a:hover {
-  color: #7C005C;
+  color: #8ABCFF;
   text-decoration: none;
 }
 
