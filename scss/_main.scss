@@ -6,10 +6,16 @@
 
 body{
     color: $colorTexto;
-    background-color: $colorFondo;
+    /*background-color: $colorFondo;*/
     font-family: $fuenteTexto;
     font-size: $cuerpoSize;
     line-height: $cuerpoSize*1.25;
+    background: url(../media/fondoprincipalfullweb.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
 }
 
 .fondos{
@@ -24,9 +30,9 @@ body{
 
 section{
 
-    margin: 0em 2.5em $bannerespacio*0.25 2.5em;
+    margin: 0em 0 $bannerespacio*0.25 0;
     background-color: $fondoNoticia;
-    border-radius: 40px;
+    /*border-radius: 40px;*/
     padding: $paddingNoticia 0px;
     box-shadow: 12px 14px 17px -9px rgba(235,199,242,1);
 
